@@ -1,0 +1,121 @@
+:root{
+    --dark-navy:#000B58;
+    --dark-green:#254336;
+    --light-blue-bg:#538392;
+    --header-text:#DAD3BE;
+    --body-bg:#92a6ab;
+    --dark-text:#040404;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-green);
+    font-family: "Poppins",sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    font-size: 1.5rem;
+    position: absolute;
+    top:10%;
+    display: flex;
+    color:var(--header-text) ;
+}
+form{
+   position: absolute; 
+   top: 25%;
+   display: flex;
+   gap: 1rem;
+    
+}
+.todo-input,.add-btn,#todo-select,.todo-option{
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+form button,.todo-input,#todo-select {
+    color: var(--dark-text);
+    border: 2px solid ;
+    transition: .3s ease;
+    background-color: var(--body-bg);
+    font-weight: 300;
+    font-size: 1rem;
+    
+    
+}
+form button{
+    cursor: pointer;
+    background-color: #f4cd5a;
+    transition: .6s;
+}
+form button:hover span{
+    color:var(--dark-text) ;
+    transform: scale(1.25);
+}
+form button.add-btn:hover{
+    transform: scale(0.8);
+}
+.todo-container {
+    position: absolute;
+    top: 38%;
+    width: 50%;
+    max-width: 500px;
+  }
+  
+  .todo-list {
+    list-style: none;
+  }
+  
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--light-blue-bg);
+    color: white;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: 0.4s ease;
+  }
+  
+  .todo.completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+  }
+  
+  .todo span {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .todo-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin-left: 10px;
+    color: white;
+    transition: 0.3s ease;
+  }
+  
+  .todo-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-size: 1.5rem;
+  }
+  
